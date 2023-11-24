@@ -78,7 +78,11 @@ nav {
 #reset {
     margin: 0 23px;
     padding: 6px 14px;
-    background: #e5c7e5;
+    background: #e3cce3;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.info{
+    font-size: 22px;
 }
