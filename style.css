@@ -46,7 +46,7 @@ nav {
 }
 
 .box:hover {
-    background-color: rgb(231, 159, 198);
+    background-color: rgb(220, 240, 218);
 }
 
 .game-info {
@@ -56,4 +56,20 @@ nav {
 
 .imgbox img {
     display: none;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
 }
