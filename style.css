@@ -36,3 +36,8 @@ nav {
     grid-template-columns: repeat(3, 10vw);
     font-family: 'Balsamiq Sans', sans-serif;
 }
+
+.box {
+    border: 2px solid black;
+    font-size: ;
+}
