@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Krub&family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 48px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.game-container {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+  background-color: rgb(231, 159, 198);
+}
