@@ -29,6 +29,7 @@ const checkwin = () => {
         if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "")) {
             document.querySelector(".info").innerText = boxtext[e[0]].innerText + "Won"
             gameOver = true;
+            document.querySelector(".imgbox").getElementsByTagName('img')[0].style.width = "200px"
         }
 
     })
@@ -40,7 +41,7 @@ let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector(".boxtext");
     element.addEventListener("click", () => {
-        music.play();
+        // music.play();
         if (boxtext.innerText === "") {
             boxtext.innerText = turn;
             turn = changeTurn();
