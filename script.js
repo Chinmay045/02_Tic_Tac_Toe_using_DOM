@@ -7,13 +7,25 @@ let Turn = "X";
 
 //Function to change the turn
 const changeTurn = () => {
-    return Turn === "X" ? 0 :"X";
+    return Turn === "X" ? 0 : "X";
 }
 
 //function to check for a win
 
-const checkwin = () =>{
+const checkwin = () => {
 
 }
 
 //Game logic
+let boxes = document.getElementsByClassName("box");
+Array.from(boxes).forEach(element => {
+    let boxtext = document.querySelector(".boxtext");
+    element.addEventListener("click", (e) => {
+        if (e.innerText === " ")
+            e.innerText = Turn;
+        changeTurn();
+        turn.play();
+        checkwin();
+        document.getElementsByClassName(Turn).innerText = "Turn for " + Turn;
+    })
+})
