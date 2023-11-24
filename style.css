@@ -28,6 +28,10 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -35,9 +39,72 @@ nav {
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
     font-family: 'Balsamiq Sans', sans-serif;
+    position: relative;
 }
 
 .box {
     border: 2px solid black;
-    font-size: ;
+    font-size: 2px;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(220, 240, 218);
+}
+
+.game-info {
+    padding: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: #e3cce3;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.line {
+    background-color: black;
+    width: 32vw;
+    height: 3px;
+    position: absolute;
+    margin-right: 394px;
+
+}
+
+@media screen and (max-width:800px) {
+    .game-container {
+        width: 90%;
+    }
 }
