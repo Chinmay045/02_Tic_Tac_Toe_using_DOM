@@ -27,6 +27,7 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -85,4 +86,11 @@ nav {
 
 .info{
     font-size: 22px;
+}
+
+@media screen and  (max-width:800px)
+{
+    #contents{
+        width: 90%;
+    }    
 }
