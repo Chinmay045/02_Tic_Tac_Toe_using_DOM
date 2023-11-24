@@ -45,7 +45,6 @@ Array.from(boxes).forEach(element => {
         if (boxtext.innerText === "") {
             boxtext.innerText = turn;
             turn = changeTurn();
-            audioTurn.play();
             checkwin();
             if (!gameOver) {
                 document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
