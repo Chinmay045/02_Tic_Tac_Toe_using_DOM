@@ -35,10 +35,12 @@ const checkwin = () => {
 }
 
 // Game logic
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector(".boxtext");
     element.addEventListener("click", () => {
+        music.play();
         if (boxtext.innerText === "") {
             boxtext.innerText = turn;
             turn = changeTurn();
