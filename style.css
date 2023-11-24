@@ -11,4 +11,9 @@ nav {
     background-color: black;
     color: white;
     height: 48px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
 }
