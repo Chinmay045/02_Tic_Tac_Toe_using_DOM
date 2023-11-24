@@ -9,3 +9,11 @@ let Turn = "X";
 const changeTurn = () => {
     return Turn === "X" ? 0 :"X";
 }
+
+//function to check for a win
+
+const checkwin = () =>{
+
+}
+
+//Game logic
