@@ -41,7 +41,7 @@ let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector(".boxtext");
     element.addEventListener("click", () => {
-        // music.play();
+        music.play();
         if (boxtext.innerText === "") {
             boxtext.innerText = turn;
             turn = changeTurn();
@@ -49,6 +49,7 @@ Array.from(boxes).forEach(element => {
             checkwin();
             if (!gameOver) {
                 document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+                document.querySelector(".line").style.transform = "translate(23vw, 39vw) rotate(98deg)"
             }
         }
     })
