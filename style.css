@@ -24,7 +24,6 @@ nav {
 }
 
 .game-container {
-    background-color: yellow;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -47,5 +46,14 @@ nav {
 }
 
 .box:hover {
-  background-color: rgb(231, 159, 198);
+    background-color: rgb(231, 159, 198);
+}
+
+.game-info {
+    padding: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgbox img {
+    display: none;
 }
