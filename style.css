@@ -22,3 +22,10 @@ nav {
     justify-content: center;
     padding: auto;
 }
+
+.game-container{
+    background-color: yellow;
+    display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
